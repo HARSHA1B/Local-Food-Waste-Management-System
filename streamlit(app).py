@@ -10,13 +10,15 @@ st.title("🥗 Local Food Wastage Management System")
 
 
 def get_connection():
-    return psycopg2.connect(
-        host="localhost",
-        database="Food Waste Management",
-        user="postgres",
-        password="harshamandeep123",
-        port="5432"
-    )
+   return psycopg2.connect(
+    host="pg-22ea8e74-harshagohte5555-03ca.i.aivencloud.com",
+    database="defaultdb",
+    user="avnadmin",
+    password="AVNS_rhlZyAT5JKEL4i9qkul",
+    port="16129",
+    sslmode="require"
+)
+
 
 def run_query(query):
     try:
